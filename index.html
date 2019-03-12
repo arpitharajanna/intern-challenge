@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>challenge</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="header">
+	<div class="header-container">
+		<div class="header-6-column">
+			<div class="item">
+				<a href="#" class="item-content">
+					<div class="icon">
+						<div class="icon-body">
+							<img src="img/account-outline.svg" class="account-outline">
+						</div>
+					</div>
+					<div class="icon-text">
+						<p>My Account</p>
+					</div>
+				</a>
+			</div>
+		
+			
+			<div class="item" >
+				<a href="#" class="item-content">
+					<div class="icon">
+						<div class="icon-body">
+							<img src="img/billing-outline.svg" class="billing-outline">
+						</div>
+					</div>
+					<div class="icon-text">
+						<p>Billing</p>
+					</div>
+				</a>
+			</div>
+			
+			<div class="item">
+				<a href="#" class="item-content">
+					<div class="icon">
+						<div class="icon-body">
+							<img src="img/low-battery-outline.svg" class="low-battery-outline">
+						</div>
+					</div>
+					<div class="icon-text">
+						<p>Battery Replacement </p>
+					</div>
+				</a>
+			</div>
+			
+			<div class="item">
+				<a href="#" class="item-content">
+					<div class="icon">
+						<div class="icon-body">
+							<img src="img/keypad-outline.svg" class="keypad-outline">
+						</div>
+					</div>
+					<div class="icon-text">
+						<p>Product Support </p>
+						</div>
+						
+				</a>
+			</div>
+			
+			<div class="item">
+				<a href="#" class="item-content">
+					<div class="icon">
+						<div class="icon-body">
+							<img src="img/adt-pulse.svg" class="ADT-Pulse">
+						</div>
+					</div>
+					<div class="icon-text">
+						<p>ADT Pulse </p>
+					</div>
+				</a>
+			</div>
+			
+			<div class="item">
+				<a href="#" class="item-content">
+					<div class="icon">
+						<div class="icon-body">
+							<img src="img/basic-alarm-outline.svg" class="basic-alarm-outline">
+						</div>
+					</div>
+					<div class="icon-text">
+						<p> Alarm Issues </p>
+						</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--body -->
+
+
+
+<!-- end of body -->
+
+
+
+
+<footer>
+	<div class="footer-container">
+		<div class="footer-content">
+			<div class="footer-border">
+				<div class="footer-text">
+					<h3 class="text-heading">Z-Wave Compatible</h3>
+					<p class="text-content">ADT systems integrate with any Z-wave certified product.</p>
+				</div>
+			</div>
+			
+			<div class="footer-border">
+				<div class="footer-text">
+					<h3 class="text-heading">Simple Setup</h3>
+					<p class="text-content">Simply plug the Z-wave module into any outlet and connect your lamp.</p>
+				</div>
+			</div>
+			 
+			 <div class="footer-border">
+				<div class="footer-text">
+					<h3 class="text-heading">Light Dimmer</h3>
+					<p class="text-content">use your app to dim lights, even if your lamp doesnt have a dimmer.</p>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+</footer>
+
+
+
+</body>
+
+<script>
+	$(document).ready(function(){
+		$(".item-content").click(function(){
+		$(".item-content").removeClass('show');
+		$(this).addClass('show');
+		});
+	});
+</script>
+
+</html>

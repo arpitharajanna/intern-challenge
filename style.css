@@ -1,0 +1,173 @@
+body{
+margin:0;
+}
+
+h1{
+margin:0;
+}
+
+.header{
+	border-bottom:1px solid #b7bdc0;
+}
+
+.header-container {
+background-color:white;
+height:99px;
+margin:auto;
+max-width:1200px;
+}
+
+.header-6-column{
+	display:flex;
+	justify-content:center;
+}
+.item-content{
+text-decoration:none;
+position:absolute;
+width:100%;
+text-align:center;
+height:97px;
+}
+
+.item:first-child{
+	border-left:none;
+}
+.item-content:hover{
+	border-bottom:solid 6px #b7bdc0;
+	z-index:6;
+	
+	
+}
+
+.item-content.show{
+	border-bottom:solid 6px #ff9600;
+	z-index:6;
+}
+
+.icon-text p{
+	padding:0 0 5px 0;
+	margin:0;
+	
+}
+
+.icon{
+	    width: 100%;
+    text-align: center;
+    padding: 17px 0 .5em 0;
+	display:block;
+}
+.item{
+	width:16.6%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	border-left:1px solid #b7bdc0;
+	height:99px;
+	cursor:pointer;
+	position:relative;
+
+}
+
+.ADT-Pulse {
+  width: 20px;
+  height: 32.5px;
+  object-fit: contain;
+  background-color: white;
+}
+
+.keypad-outline {
+  width: 35.8px;
+  height: 30.5px;
+  object-fit: contain;
+  background-color: white;
+}
+.basic-alarm-outline {
+  width: 38.1px;
+  height: 32.9px;
+  object-fit: contain;
+  background-color: white;
+}
+
+.low-battery-outline {
+  width: 19.2px;
+  height: 31.8px;
+  object-fit: contain;
+  background-color: white;
+}
+.account-outline {
+  width: 26.5px;
+  height: 32.3px;
+  object-fit: contain;
+  background-color: white;
+}
+.billing-outline {
+  width: 39.1px;
+  height: 25.7px;
+  object-fit: contain;
+  background-color: white;
+}
+
+/*footer*/
+
+.footer-container{
+	margin:0 auto;
+	max-width:1200px;
+}
+
+.footer-content{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+/*mobile devices*/
+@media screen and (max-width: 992px){ 
+.footer-content{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #898E91;
+	
+ 
+	}
+	.footer-text{
+		padding:10px;
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		justify-content:center;
+	}
+	.text-heading{
+	margin:0;
+	padding: 5px 5px 2.5px 5px;
+	color:white;
+	font-family:'Open Sans',sans-serif;
+	
+	line-height:1.3em;
+	
+	}
+	
+	.text-content{
+		margin:0;
+		color:white;
+		
+		font-family:'Open Sans',sans-serif;
+
+	line-height:1.3em;
+	
+	}
+	
+	.footer-border{
+		border-bottom:0.5px solid #e7eaec;
+		width:100%;
+	}
+	
+}
+
+	
+
+
+/*footer*?
+
