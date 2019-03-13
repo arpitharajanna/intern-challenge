@@ -32,14 +32,15 @@ height:97px;
 .item:first-child{
 	border-left:none;
 }
-.item-content:hover{
+.item:hover{
 	border-bottom:solid 6px #b7bdc0;
 	z-index:6;
+
 	
 	
 }
 
-.item-content.show{
+.item.show-selected{
 	border-bottom:solid 6px #ff9600;
 	z-index:6;
 }
@@ -70,39 +71,39 @@ height:97px;
 }
 
 .ADT-Pulse {
-  width: 20px;
+  width: 100%;
   height: 32.5px;
   object-fit: contain;
   background-color: white;
 }
 
 .keypad-outline {
-  width: 35.8px;
+  width: 100%;
   height: 30.5px;
   object-fit: contain;
   background-color: white;
 }
 .basic-alarm-outline {
-  width: 38.1px;
+  width: 100%;
   height: 32.9px;
   object-fit: contain;
   background-color: white;
 }
 
 .low-battery-outline {
-  width: 19.2px;
+  width: 100%;
   height: 31.8px;
   object-fit: contain;
   background-color: white;
 }
 .account-outline {
-  width: 26.5px;
+  width: 1005;
   height: 32.3px;
   object-fit: contain;
   background-color: white;
 }
 .billing-outline {
-  width: 39.1px;
+  width: 100%;
   height: 25.7px;
   object-fit: contain;
   background-color: white;
@@ -120,6 +121,75 @@ height:97px;
 	justify-content:center;
 	align-items:center;
 }
+.down-arrow {
+  width: 25.5px;
+  height: 14.7px;
+  object-fit: contain;
+  background-color: white;
+}
+
+.arrow-mobile{
+	display:none;
+}
+
+/*body*/
+
+.Video-Monitor {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.content-container{
+	margin:0 auto;
+	max-width:1200px;
+}
+
+.content-container .wrap{
+	border-bottom:1px solid #b7bdc0;
+	padding:20px;
+}
+
+.content-heading{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	padding: 20px;
+}
+.content-para{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+
+.content-text{
+	padding:10px 20px;
+}
+
+ul {
+  list-style: none;
+  padding:0;
+}
+
+ul li:before {
+  content: '✓'; 
+  font-size:16px;
+  font-weight:bold;
+  padding-right: 20px;
+}
+
+.hide-content{
+	display:none;
+}
+
+.show-content{
+	display:block;
+}
+/*body*/
+
+
+
 
 /*mobile devices*/
 @media screen and (max-width: 992px){ 
@@ -163,6 +233,39 @@ height:97px;
 		border-bottom:0.5px solid #e7eaec;
 		width:100%;
 	}
+	
+	.icon{
+	display:none;
+	}
+	
+	.header-container{
+		height:auto !important;
+	}
+	.header-6-column{
+		flex-direction:column;
+	}
+	
+	.item{
+		width:100%;
+		height:auto;
+		padding:20px;
+		border-bottom:1px solid #b7bdc0;
+	}
+	.item-content{
+		height:auto;
+	}
+	.arrow-mobile{
+		display:block;
+		position:absolute;
+		right:0;
+		z-index:999;
+		cursor:pointer;
+	}
+	.show{
+display:block;}
+
+.hide{
+display:none;}
 	
 }
 
