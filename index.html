@@ -12,7 +12,7 @@
 <div class="header">
 	<div class="header-container">
 		<div class="header-6-column">
-			<div class="item show-selected show" >
+			<div class="item  show-selected ">
 				<a href="#account" class="item-content">
 					<div class="icon">
 						<div class="icon-body">
@@ -127,7 +127,7 @@
 					<ul>
 						<li>use Your app to dim lights, even if your lamp.</li>
 						<li>Doesnt have a dimmer. use your app to dim lights.</li>
-						<li>use Your app to dim lights, even if your lamp even if your lamp Doesnt have a dimmer</li>
+						<li>use Your app to dim lights, even if your lamp even if your lamp.</li>
 					</ul>
 				</div>
 			</div>
@@ -160,7 +160,7 @@
 					<ul>
 						<li>use Your app to dim lights, even if your lamp.</li>
 						<li>Doesnt have a dimmer. use your app to dim lights.</li>
-						<li>use Your app to dim lights, even if your lamp even if your lamp Doesnt have a dimmer</li>
+						<li>use Your app to dim lights, even if your lamp even if your lamp.</li>
 					</ul>
 				</div>
 			</div>
@@ -193,7 +193,7 @@
 					<ul>
 						<li>use Your app to dim lights, even if your lamp.</li>
 						<li>Doesnt have a dimmer. use your app to dim lights.</li>
-						<li>use Your app to dim lights, even if your lamp even if your lamp Doesnt have a dimmer</li>
+						<li>use Your app to dim lights, even if your lamp even if your lamp.</li>
 					</ul>
 				</div>
 			</div>
@@ -226,7 +226,7 @@
 					<ul>
 						<li>use Your app to dim lights, even if your lamp.</li>
 						<li>Doesnt have a dimmer. use your app to dim lights.</li>
-						<li>use Your app to dim lights, even if your lamp even if your lamp Doesnt have a dimmer</li>
+						<li>use Your app to dim lights, even if your lamp even if your lamp.</li>
 					</ul>
 				</div>
 			</div>
@@ -259,7 +259,7 @@
 					<ul>
 						<li>use Your app to dim lights, even if your lamp.</li>
 						<li>Doesnt have a dimmer. use your app to dim lights.</li>
-						<li>use Your app to dim lights, even if your lamp even if your lamp Doesnt have a dimmer</li>
+						<li>use Your app to dim lights, even if your lamp even if your lamp.</li>
 					</ul>
 				</div>
 			</div>
@@ -292,7 +292,7 @@
 					<ul>
 						<li>use Your app to dim lights, even if your lamp.</li>
 						<li>Doesnt have a dimmer. use your app to dim lights.</li>
-						<li>use Your app to dim lights, even if your lamp even if your lamp Doesnt have a dimmer</li>
+						<li>use Your app to dim lights, even if your lamp even if your lamp.</li>
 					</ul>
 				</div>
 			</div>
@@ -341,8 +341,9 @@
 <script>
 	$(document).ready(function(){
 		$(".item").click(function(){
-		$(".item").removeClass('show-selected');
-		$(this).addClass('show-selected'); 
+		
+		$(".item").removeClass('show-selected').addClass('hide');
+		$(this).removeClass('hide').addClass('show-selected'); 
 		});
 		
 		$('.item> a').click(function(event){
@@ -372,30 +373,25 @@
 	  
 		
 		var mobile=$('.arrow-mobile');
-	
-		
 		mobile.click(function(){
 			if($('.header-6-column').hasClass('hidden'))
 			{
-				
-				$('.item').removeClass('show').addClass('hide');
-				$('.item.show-selected').removeClass('hide');
+				$('.item').not('.show-selected').removeClass('show').addClass('hide');
+				$('.item.show-selected').removeClass('hide')
 				$('.item.show-selected').addClass('show');
 				$('.header-6-column').removeClass('hidden');
+				$('span.arrow-mobile img').css({'transform':'rotate(0deg)', 'transition':'1s'}); 
+				
 			}
 			else
 			{
 				$('.item').removeClass('hide').addClass('show');
 				$('.header-6-column').addClass('hidden');
+				$('span.arrow-mobile img').css({'transform':'rotate(180deg)', 'transition':'1s'}); 
 				
-				}
+			}
 				
-		});
-		
-		
-		
-		
-		
+		}); 
 		
 	});
 </script>
