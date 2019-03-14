@@ -122,8 +122,8 @@ height:97px;
 	align-items:center;
 }
 .down-arrow {
-  width: 25.5px;
-  height: 14.7px;
+  width: 80%;
+  height: auto;
   object-fit: contain;
   background-color: white;
 }
@@ -148,6 +148,8 @@ height:97px;
 .content-container .wrap{
 	border-bottom:1px solid #b7bdc0;
 	padding:20px;
+	display:flex;
+	flex-flow:row wrap;
 }
 
 .content-heading{
@@ -156,15 +158,34 @@ height:97px;
 	justify-content:center;
 	align-items:center;
 	padding: 20px;
+	
 }
+
+.heading{
+	flex:1 100%;
+	text-align:center;
+	
+}
+
+.sub-heading{
+	flex:1 100%;
+	text-align:center;
+	padding:0 30px;
+}
+
 .content-para{
 	display:flex;
 	flex-direction:row;
 	justify-content:space-between;
 }
 
+.content-image{
+	flex:0 0 50%;
+}
+
 .content-text{
 	padding:10px 20px;
+	flex:2;
 }
 
 ul {
@@ -174,9 +195,10 @@ ul {
 
 ul li:before {
   content: '✓'; 
-  font-size:16px;
-  font-weight:bold;
+  font-size:20px;
+  font-weight:bolder;
   padding-right: 20px;
+  
 }
 
 .hide-content{
@@ -186,6 +208,15 @@ ul li:before {
 .show-content{
 	display:block;
 }
+
+.content-text-heading{
+	font-size:2em;
+	font-weight:lighter;
+	font-family:monstreat;
+}
+.content-text-heading h3{
+margin:0;
+font-weight:lighter;}
 /*body*/
 
 
@@ -222,7 +253,7 @@ ul li:before {
 	.text-content{
 		margin:0;
 		color:white;
-		
+		text-align:center;
 		font-family:'Open Sans',sans-serif;
 
 	line-height:1.3em;
@@ -248,26 +279,83 @@ ul li:before {
 	.item{
 		width:100%;
 		height:auto;
-		padding:20px;
+		/* padding:20px; */
 		border-bottom:1px solid #b7bdc0;
 	}
 	.item-content{
 		height:auto;
+		position:relative;
+	}
+	
+	.icon-text{
+		padding:10px;
 	}
 	.arrow-mobile{
 		display:block;
 		position:absolute;
 		right:0;
+		top:3px;
+		padding:10px;
 		z-index:999;
+		
 		cursor:pointer;
 	}
 	.show{
-display:block;}
+		display:block;
+		}
 
-.hide{
-display:none;}
+	.hide{
+	display:none;
+	}
+
+	.heading{
+	order:1;
+	padding:10px;
+	display:none;
+	text-align:center;
+	}
+	.sub-heading{
+		order:3;
+		padding:20px;
+		text-align:center;
+		    color: #898E91;
+	}
+
+	.content-image{
+	order:2;
+	flex:auto;
 	
+	}
+	.content-text{
+	order:4;
+	padding:10px;
+	}
+	.content-text-heading{
+	text-align:center;
+	
+	}
+	.content-text-heading h3{
+		margin:0;
+	}
+
+	.content-container .wrap{
+		padding:0;
+		justify-content:center;
+		align-items:center;
+	}
+	
+	.content-text-list{
+		text-align:center;
+		    color: #898E91;
+	}
+	.ul li:before {
+	color:#ff9600;}
 }
+
+
+
+
+
 
 	
 
